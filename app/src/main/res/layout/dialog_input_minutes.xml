@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editMinutes"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="분 단위로 입력 (예: 10)"
+    android:inputType="number"
+    android:maxLines="1"
+    android:padding="12dp"/>

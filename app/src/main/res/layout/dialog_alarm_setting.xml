@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="알람 시간을 선택하거나 직접 입력하세요"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/timeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5분 후"/>
+
+        <RadioButton
+            android:id="@+id/radio10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10분 후"/>
+
+        <RadioButton
+            android:id="@+id/radio30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="30분 후"/>
+    </RadioGroup>
+
+    <!-- 직접 입력하는 EditText 추가 -->
+    <EditText
+        android:id="@+id/editMinutes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="직접 입력 (분)"
+        android:inputType="number"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <CheckBox
+        android:id="@+id/soundCheckbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="알람음 재생"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
